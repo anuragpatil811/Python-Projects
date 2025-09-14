@@ -1,8 +1,8 @@
 from twilio.rest import Client
 from datetime import datetime, timedelta
 import time
-#account_sid = 'ACad6806e98212fe46c871f9bd8d4d4bf8'
-#auth_token = 'abfc461e667a18eb15041883fd7bf53b'
+account_sid = 'Your sid'
+auth_token = 'Your authorization token'
 client = Client(account_sid, auth_token)
 def send_whatsapp_message(message_body, recipient_number):
     try:
@@ -35,4 +35,5 @@ else:
 
     time.sleep(delay_seconds)
     send_whatsapp_message(message_body, recipient_number)
+
 
